@@ -5,46 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Cá Nhân | Graphic & Motion Designer</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <nav id="navbar">
-        <div class="logo">Portfolio.</div>
+    <!-- Vòng tròn ánh sáng làm nền mờ (Trang trí) -->
+    <div class="bg-glow circle-1"></div>
+    <div class="bg-glow circle-2"></div>
+
+    <!-- Thanh Điều Hướng -->
+    <nav id="navbar" class="glass-effect">
+        <div class="logo">Port<span class="gradient-text">folio.</span></div>
         <ul class="nav-links">
             <li><a href="#home">Trang Chủ</a></li>
             <li><a href="#about">Giới Thiệu</a></li>
             <li><a href="#projects">Dự Án</a></li>
             <li><a href="#contact">Liên Hệ</a></li>
         </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
     </nav>
 
+    <!-- Phần Giới Thiệu (Hero Section) -->
     <header id="home" class="hero">
         <div class="hero-content reveal">
-            <h1>Xin chào, tôi là Ngô Văn Hóa <br><span class="highlight">Creative Designer</span></h1>
-            <p>Đam mê kiến tạo trải nghiệm thị giác qua Graphic Design, Digital Art và Motion Graphics.</p>
-            <a href="#projects" class="btn">Xem Tác Phẩm</a>
+            <h2 class="subtitle">Chào mừng bạn đến với thế giới sáng tạo</h2>
+            <h1>Tôi là Ngô Văn Hóa <br><span class="gradient-text" id="typewriter"></span><span class="cursor">|</span></h1>
+            <p>Kiến tạo trải nghiệm thị giác đột phá qua Graphic Design, Digital Art và Motion Graphics.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">Xem Tác Phẩm</a>
+                <a href="#contact" class="btn btn-outline">Liên Hệ Ngay</a>
+            </div>
         </div>
     </header>
 
     <!-- Phần Về Tôi -->
     <section id="about" class="about">
         <div class="container reveal">
-            <h2>Về Tôi</h2>
+            <h2 class="section-title">Về <span class="gradient-text">Tôi</span></h2>
             <div class="about-content">
-                <!-- Cột Hình Ảnh -->
                 <div class="about-image">
-                    <!-- Bạn hãy thay "avatar.jpg" bằng tên file ảnh thật của bạn (để ảnh cùng thư mục với file index) -->
-                    <img src="z7955505124681_68eb559176a269fd3ccee7d947f3c0cd.jpg" alt="Hình ảnh cá nhân của tôi">
+                    <img src="z7955505124681_68eb559176a269fd3ccee7d947f3c0cd.jpg" alt="Hình ảnh cá nhân">
                 </div>
-                
-                <!-- Cột Nội Dung -->
-                <div class="about-text">
+                <div class="about-text glass-card">
                     <p>Tôi là một nhà thiết kế với thế mạnh về xây dựng nhận diện thương hiệu, thiết kế nhân vật và ứng dụng After Effects vào chuyển động. Tôi luôn tìm kiếm sự kết hợp giữa các yếu tố văn hóa truyền thống và phong cách thiết kế hiện đại để tạo ra những sản phẩm có chiều sâu.</p>
                     <div class="skills">
                         <span class="skill-tag">Graphic Design</span>
@@ -57,40 +58,39 @@
         </div>
     </section>
 
+    <!-- Phần Dự Án -->
     <section id="projects" class="projects">
         <div class="container reveal">
-            <h2>Dự Án Nổi Bật</h2>
+            <h2 class="section-title">Dự Án <span class="gradient-text">Nổi Bật</span></h2>
             <div class="project-grid">
                 
-                <div class="project-card">
-                    <div class="project-image placeholder-img">Image: TVK Tea Branding</div>
+                <div class="project-card glass-card">
+                    <div class="project-image-container">
+                        <img src="cold.png" alt=" Tea Branding" class="project-img">
+                    </div>
                     <div class="project-info">
-                        <h3>Nhận Diện Thương Hiệu TVK Tea</h3>
-                        <p>Thiết kế logo và ấn phẩm truyền thông cho thương hiệu trà. Tập trung vào hình ảnh 3 anh em và lá trà, kể câu chuyện về hành trình rang xay và chế biến.</p>
+                        <h3>Nhận Diện Thương Hiệu</h3>
+                        <p>Thiết kế logo và ấn phẩm truyền thông, kể câu chuyện hành trình trà rang xay.</p>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-image placeholder-img">Image: Folklore Characters</div>
+                <div class="project-card glass-card">
+                    <div class="project-image-container">
+                        <img src="poster trà sữa.png" alt="Folklore Characters" class="project-img">
+                    </div>
                     <div class="project-info">
-                        <h3>Concept Nhân Vật Cổ Tích</h3>
-                        <p>Nghiên cứu và thiết kế concept nhân vật lấy cảm hứng từ thần thoại Việt Nam (Sơn Tinh, Thủy Tinh, Thánh Gióng) cho dự án Digital Art.</p>
+                        <h3>Concept Nhân Vật</h3>
+                        <p>Nghiên cứu và thiết kế concept nhân vật lấy cảm hứng từ thần thoại Việt Nam.</p>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-image placeholder-img">Image: Motion Graphics</div>
-                    <div class="project-info">
-                        <h3>Motion Graphics & Quảng Cáo</h3>
-                        <p>Sử dụng After Effects (Puppet Pin, Parallax Effect) để diễn hoạt infographic storyboard và thiết kế layout banner website du lịch.</p>
+                <div class="project-card glass-card">
+                    <div class="project-image-container">
+                        <img src="cold.png" alt="Motion Graphics" class="project-img">
                     </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image placeholder-img">Image: Gundam Brochure</div>
                     <div class="project-info">
-                        <h3>Gundam Catalog & Brochure</h3>
-                        <p>Thiết kế dàn trang, typography và cover cho catalog giới thiệu các mẫu mô hình Gunpla.</p>
+                        <h3>Motion Graphics</h3>
+                        <p>Sử dụng After Effects để diễn hoạt infographic storyboard cho website.</p>
                     </div>
                 </div>
 
@@ -98,21 +98,24 @@
         </div>
     </section>
 
+    <!-- Phần Liên Hệ -->
     <section id="contact" class="contact">
         <div class="container reveal">
-            <h2>Hãy Làm Việc Cùng Nhau</h2>
-            <p>Bạn có một dự án thú vị? Hãy gửi tin nhắn cho tôi.</p>
-            <form id="contact-form">
-                <input type="text" placeholder="Tên của bạn" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Nội dung tin nhắn" rows="5" required></textarea>
-                <button type="submit" class="btn">Gửi Tin Nhắn</button>
+            <h2 class="section-title">Hãy <span class="gradient-text">Kết Nối</span></h2>
+            <p style="text-align: center; margin-bottom: 30px; color: #94a3b8;">Sẵn sàng biến ý tưởng của bạn thành hiện thực.</p>
+            <form id="contact-form" class="glass-card">
+                <div class="input-group">
+                    <input type="text" placeholder="Tên của bạn" required>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <textarea placeholder="Bạn muốn chia sẻ điều gì?" rows="5" required></textarea>
+                <button type="submit" class="btn btn-primary btn-block">Gửi Tin Nhắn</button>
             </form>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Portfolio. Thiết kế với sự đam mê.</p>
+        <p>&copy; 2026 Portfolio. Code bằng sự sáng tạo.</p>
     </footer>
 
     <script src="script.js"></script>
