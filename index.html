@@ -9,48 +9,53 @@
 </head>
 <body>
 
-    <!-- Vòng tròn ánh sáng làm nền mờ (Trang trí) -->
-    <div class="bg-glow circle-1"></div>
-    <div class="bg-glow circle-2"></div>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
 
-    <!-- Thanh Điều Hướng -->
+    <div class="bg-glow circle-1" data-speed="-3"></div>
+    <div class="bg-glow circle-2" data-speed="3"></div>
+
     <nav id="navbar" class="glass-effect">
         <div class="logo">Port<span class="gradient-text">folio.</span></div>
         <ul class="nav-links">
             <li><a href="#home">Trang Chủ</a></li>
-            <li><a href="#about">Giới Thiệu</a></li>
+            <li><a href="#about">Về Tôi</a></li>
+            <li><a href="#expertise">Chuyên Môn</a></li>
             <li><a href="#projects">Dự Án</a></li>
             <li><a href="#contact">Liên Hệ</a></li>
         </ul>
     </nav>
 
-    <!-- Phần Giới Thiệu (Hero Section) -->
     <header id="home" class="hero">
         <div class="hero-content reveal">
-            <h2 class="subtitle">Chào mừng bạn đến với thế giới sáng tạo</h2>
-            <h1>Tôi là Ngô Văn Hóa <br><span class="gradient-text" id="typewriter"></span><span class="cursor">|</span></h1>
-            <p>Kiến tạo trải nghiệm thị giác đột phá qua Graphic Design, Digital Art và Motion Graphics.</p>
+            <h2 class="subtitle">Sáng tạo không giới hạn</h2>
+            <h1>Tôi là một <br><span class="gradient-text" id="typewriter"></span><span class="cursor">|</span></h1>
+            <p>Kiến tạo trải nghiệm thị giác đột phá qua sự kết hợp giữa nghệ thuật truyền thống và kỹ thuật hiện đại.</p>
             <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">Xem Tác Phẩm</a>
-                <a href="#contact" class="btn btn-outline">Liên Hệ Ngay</a>
+                <a href="#projects" class="btn btn-primary">Khám Phá Tác Phẩm</a>
+                <a href="#contact" class="btn btn-outline">Kết Nối Ngay</a>
             </div>
         </div>
     </header>
 
-    <!-- Phần Về Tôi -->
     <section id="about" class="about">
         <div class="container reveal">
-            <h2 class="section-title">Về <span class="gradient-text">Tôi</span></h2>
             <div class="about-content">
-                <div class="about-image">
+                <div class="about-image tilt-element">
                     <img src="z7955505124681_68eb559176a269fd3ccee7d947f3c0cd.jpg" alt="Hình ảnh cá nhân">
+                    <div class="experience-badge">
+                        <span class="years">Cần Thơ</span>
+                        <span class="text">Vietnam</span>
+                    </div>
                 </div>
                 <div class="about-text glass-card">
-                    <p>Tôi là một nhà thiết kế với thế mạnh về xây dựng nhận diện thương hiệu, thiết kế nhân vật và ứng dụng After Effects vào chuyển động. Tôi luôn tìm kiếm sự kết hợp giữa các yếu tố văn hóa truyền thống và phong cách thiết kế hiện đại để tạo ra những sản phẩm có chiều sâu.</p>
+                    <h2 class="section-title left-align">Câu Chuyện <span class="gradient-text">Của Tôi</span></h2>
+                    <p>Là một nhà thiết kế sinh sống và làm việc tại Cần Thơ, tôi tin rằng thiết kế là ngôn ngữ kết nối những giá trị cốt lõi. Cho dù đó là việc kể câu chuyện khởi nghiệp gia đình qua một logo thương hiệu, phục dựng hình ảnh các nhân vật dân gian bằng Digital Art, hay thổi hồn vào các chuyển động bằng After Effects, tôi luôn đặt sự tỉ mỉ lên hàng đầu.</p>
+                    <p>Sự kiên nhẫn và chính xác trong công việc của tôi giống như cách người ta cẩn thận lắp ráp từng chi tiết tinh xảo của một mô hình Gunpla — mọi thứ đều cần sự hoàn hảo để tạo nên một tổng thể ấn tượng.</p>
                     <div class="skills">
-                        <span class="skill-tag">Graphic Design</span>
-                        <span class="skill-tag">Character Concept</span>
+                        <span class="skill-tag">Photoshop & Illustrator</span>
                         <span class="skill-tag">Adobe After Effects</span>
+                        <span class="skill-tag">Brand Identity</span>
                         <span class="skill-tag">UI/UX Layout</span>
                     </div>
                 </div>
@@ -58,39 +63,79 @@
         </div>
     </section>
 
-    <!-- Phần Dự Án -->
+    <section id="expertise" class="expertise">
+        <div class="container reveal">
+            <h2 class="section-title">Lĩnh Vực <span class="gradient-text">Chuyên Môn</span></h2>
+            <div class="services-grid">
+                <div class="service-card glass-card tilt-element">
+                    <div class="service-icon">✦</div>
+                    <h3>Brand Identity</h3>
+                    <p>Xây dựng hệ thống nhận diện thương hiệu từ logo, bao bì đến ấn phẩm truyền thông, giúp doanh nghiệp kể câu chuyện riêng biệt.</p>
+                </div>
+                <div class="service-card glass-card tilt-element">
+                    <div class="service-icon">✦</div>
+                    <h3>Digital Art & Concept</h3>
+                    <p>Nghiên cứu và sáng tạo concept nhân vật, kết hợp yếu tố văn hóa lịch sử vào nghệ thuật kỹ thuật số đương đại.</p>
+                </div>
+                <div class="service-card glass-card tilt-element">
+                    <div class="service-icon">✦</div>
+                    <h3>Motion Graphics</h3>
+                    <p>Diễn hoạt infographic, áp dụng Puppet Pin, Parallax để tạo ra các video quảng cáo và chuyển động mượt mà, thu hút.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="projects" class="projects">
         <div class="container reveal">
-            <h2 class="section-title">Dự Án <span class="gradient-text">Nổi Bật</span></h2>
-            <div class="project-grid">
+            <h2 class="section-title">Dự Án <span class="gradient-text">Tiêu Biểu</span></h2>
+            <div class="project-showcase">
                 
-                <div class="project-card glass-card">
-                    <div class="project-image-container">
-                        <img src="cold.png" alt=" Tea Branding" class="project-img">
+                <div class="project-row glass-card">
+                    <div class="project-img-wrapper tilt-element">
+                        <img src="cold.png" alt="TVK Tea Branding" class="project-img">
                     </div>
                     <div class="project-info">
-                        <h3>Nhận Diện Thương Hiệu</h3>
-                        <p>Thiết kế logo và ấn phẩm truyền thông, kể câu chuyện hành trình trà rang xay.</p>
+                        <span class="project-category">Branding & Packaging</span>
+                        <h3>TVK Tea Identity</h3>
+                        <p>Dự án thiết kế nhận diện cốt lõi cho thương hiệu trà gia đình. Logo được lấy cảm hứng từ hình ảnh 3 anh em và lá trà, truyền tải hành trình đam mê với nghệ thuật rang xay truyền thống.</p>
+                        <a href="#" class="btn btn-outline btn-small">Xem Chi Tiết</a>
                     </div>
                 </div>
 
-                <div class="project-card glass-card">
-                    <div class="project-image-container">
-                        <img src="poster trà sữa.png" alt="Folklore Characters" class="project-img">
+                <div class="project-row glass-card reverse">
+                    <div class="project-img-wrapper tilt-element">
+                        <img src="cold.png" alt="Folklore Characters" class="project-img">
                     </div>
                     <div class="project-info">
-                        <h3>Concept Nhân Vật</h3>
-                        <p>Nghiên cứu và thiết kế concept nhân vật lấy cảm hứng từ thần thoại Việt Nam.</p>
+                        <span class="project-category">Digital Art & Concept</span>
+                        <h3>Vietnamese Folklore Concept</h3>
+                        <p>Nghiên cứu văn hóa và thiết kế tạo hình nhân vật Digital Art dựa trên các truyền thuyết dân gian Việt Nam (Sơn Tinh, Thủy Tinh, Thánh Gióng), mang lại góc nhìn hiện đại và hùng tráng.</p>
+                        <a href="#" class="btn btn-outline btn-small">Xem Chi Tiết</a>
                     </div>
                 </div>
 
-                <div class="project-card glass-card">
-                    <div class="project-image-container">
+                <div class="project-row glass-card">
+                    <div class="project-img-wrapper tilt-element">
                         <img src="cold.png" alt="Motion Graphics" class="project-img">
                     </div>
                     <div class="project-info">
-                        <h3>Motion Graphics</h3>
-                        <p>Sử dụng After Effects để diễn hoạt infographic storyboard cho website.</p>
+                        <span class="project-category">Motion Design & Layout</span>
+                        <h3>Interactive Banners</h3>
+                        <p>Thiết kế UI Layout và sử dụng After Effects để diễn hoạt các storyboard. Ứng dụng kỹ thuật Track Matte và Parallax để tạo chiều sâu cho các chiến dịch quảng cáo du lịch.</p>
+                        <a href="#" class="btn btn-outline btn-small">Xem Chi Tiết</a>
+                    </div>
+                </div>
+
+                 <div class="project-row glass-card reverse">
+                    <div class="project-img-wrapper tilt-element">
+                        <img src="cold.png" alt="Gundam Brochure" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Editorial Design</span>
+                        <h3>Gunpla Collection Brochure</h3>
+                        <p>Chịu trách nhiệm dàn trang, xử lý hệ thống typography và thiết kế trang bìa cho catalog giới thiệu các dòng mô hình Gundam cao cấp.</p>
+                        <a href="#" class="btn btn-outline btn-small">Xem Chi Tiết</a>
                     </div>
                 </div>
 
@@ -98,24 +143,23 @@
         </div>
     </section>
 
-    <!-- Phần Liên Hệ -->
     <section id="contact" class="contact">
         <div class="container reveal">
-            <h2 class="section-title">Hãy <span class="gradient-text">Kết Nối</span></h2>
-            <p style="text-align: center; margin-bottom: 30px; color: #94a3b8;">Sẵn sàng biến ý tưởng của bạn thành hiện thực.</p>
-            <form id="contact-form" class="glass-card">
+            <h2 class="section-title">Bắt Đầu <span class="gradient-text">Dự Án Mới</span></h2>
+            <p style="text-align: center; margin-bottom: 40px; color: var(--text-muted);">Sẵn sàng biến ý tưởng của bạn thành hiện thực.</p>
+            <form id="contact-form" class="glass-card tilt-element">
                 <div class="input-group">
                     <input type="text" placeholder="Tên của bạn" required>
                     <input type="email" placeholder="Email" required>
                 </div>
                 <textarea placeholder="Bạn muốn chia sẻ điều gì?" rows="5" required></textarea>
-                <button type="submit" class="btn btn-primary btn-block">Gửi Tin Nhắn</button>
+                <button type="submit" class="btn btn-primary btn-block">Gửi Tin Nhắn Ngay</button>
             </form>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Portfolio. Code bằng sự sáng tạo.</p>
+        <p>&copy; 2026 Portfolio. Crafted with passion.</p>
     </footer>
 
     <script src="script.js"></script>
